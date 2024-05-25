@@ -1,0 +1,42 @@
+#tabs {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 80px;
+    padding: 0 40px;
+    background-color: #eee;
+    box-shadow: 0 8px 20px #444;
+    z-index: 30;
+}
+
+.tab {
+    color: grey;
+    border: none;
+    background-color: transparent;
+    transition: 0.1s all ease-in-out;
+    /* Easier to click */
+    width: 70%;
+}
+
+.tab:hover{
+    background: #ddd;
+}
+
+.tab:active{
+    background-color: #ccc;
+}
+
+.tab.active {
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+#indicator {
+    position: absolute;
+    bottom: 20px;
+    height: 3px;
+    background-color: var(--main-color);
+    transition: left 0.15s ease, width 0.15s ease;
+}

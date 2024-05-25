@@ -1,0 +1,104 @@
+:root{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eee;
+  --main-color: #09b7e3;
+  overflow-x: hidden;
+}
+
+body{
+  margin-bottom: 120px;
+}
+
+#top{
+  display: flex;
+  justify-content: space-between;
+  margin: 70px 20px 0;
+}
+
+#top h1{
+  font-size: x-large;
+  margin: 0;
+}
+
+#top #botones{
+  display: flex;
+  position: relative;
+}
+
+#botones button{
+  height: 40px;
+  width: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  position: relative;
+  border: none;
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+#subtitle{
+  color: grey;
+  margin-left: 20px;
+  margin: 10px 20px 10px;
+}
+
+/** TEMPORARY */
+
+.placeholder{
+  background-color: var(--main-color);
+  border-radius: 5px;
+  text-align: center;
+  line-height: 80px;
+  margin: 0 50px;
+  height: 80px;
+  font-size: 2rem;
+  color: white;
+  animation: appear 0.5s forwards;
+}
+
+/* REACT */
+
+.appear{
+  animation: appear 0.5s forwards;
+}
+
+@keyframes appear {
+  0%{
+    transform: translateX(-130%);
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+svg{
+  width: 100%;
+  height: auto;
+}
+
+circle, path{
+  stroke:var(--main-color);
+  stroke-width: 3;
+  fill: none;
+}
+
+.button-primary{
+  border: none;
+  background-color: transparent;
+}
+
+.bottom{
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 130px;
+}
+
+.button-primary.bottom{
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 2rem;
+}
