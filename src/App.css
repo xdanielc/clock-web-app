@@ -73,32 +73,25 @@ body{
   }
 }
 
-svg{
-  width: 100%;
-  height: auto;
+.circular-container{
+  margin: 80px 40px;
+  height: 50vh;
+  object-fit: cover;
 }
 
-circle, path{
-  stroke:var(--main-color);
-  stroke-width: 3;
-  fill: none;
-}
-
-.button-primary{
-  border: none;
-  background-color: transparent;
-}
-
-.bottom{
+.buttons-bottom{
+  border-top: 2px solid #ccc;
   position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 130px;
+  bottom: 80px;
+  width: 100%;
+  display: flex;
+  height: 100px;
 }
 
-.button-primary.bottom{
-  text-align: center;
-  margin: 0 auto;
-  font-weight: 700;
+.button{
+  flex-grow: 1;
   font-size: 2rem;
+  border: none;
+  color: var(--main-color);
+  background-color: transparent;
 }
