@@ -61,7 +61,7 @@ const Tabs = (props) => {
     return (
         <>
             <div id="top">
-                <h1>World Clock</h1>
+                <h1>{activeTab}</h1>
                 <div id="botones">
                     <button type="button">+</button>
                     <button type="button">R</button>
