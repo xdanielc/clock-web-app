@@ -22,13 +22,6 @@
     color: var(--main-color);
 }
 
-.crono-display {
-    text-align: center;
-    margin-top: 250px;
-    font-weight: 300;
-    font-size: 4rem;
-}
-
 .flex {
     display: flex;
     justify-content: space-evenly;
@@ -56,4 +49,16 @@
 
 .pill:active{
     background-color: #bbb;
+}
+
+.crono-display {
+    font-family: 'Cascadia Mono', 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-top: 250px;
+    font-weight: 300;
+    font-size: 4rem;
+}
+
+.crono-ms{
+    font-size: 2.5rem;
 }
