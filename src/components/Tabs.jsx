@@ -71,10 +71,10 @@ const Tabs = (props) => {
             <p id="subtitle">Your current local time is {horaLocal}:{minsDisplay}:{secsDisplay} PM</p>
             {props.children}
             <div id="tabs">
-                <button onClick={moveTab} type="button" className={`tab ${activeTab === 'Alarm' ? 'active' : ''}`}>Alarm</button>
-                <button onClick={moveTab} type="button" className={`tab ${activeTab === 'World clock' ? 'active' : ''}`}>World clock</button>
-                <button onClick={moveTab} type="button" className={`tab ${activeTab === 'Timer' ? 'active' : ''}`}>Timer</button>
-                <button onClick={moveTab} type="button" className={`tab ${activeTab === 'Stopwatch' ? 'active' : ''}`}>Stopwatch</button>
+                <button onMouseDown={moveTab} type="button" className={`tab ${activeTab === 'Alarm' ? 'active' : ''}`}>Alarm</button>
+                <button onMouseDown={moveTab} type="button" className={`tab ${activeTab === 'World clock' ? 'active' : ''}`}>World clock</button>
+                <button onMouseDown={moveTab} type="button" className={`tab ${activeTab === 'Timer' ? 'active' : ''}`}>Timer</button>
+                <button onMouseDown={moveTab} type="button" className={`tab ${activeTab === 'Stopwatch' ? 'active' : ''}`}>Stopwatch</button>
                 <div id="indicator" style={{ left: `${indicatorStyle.left}px`, width: `${indicatorStyle.width}px` }}></div>
             </div>
         </>
