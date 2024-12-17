@@ -9,9 +9,11 @@ Currently, two official plugins are available:
 
 To run:
 
-``git clone https://github.com/xdanielc/clock-web-app
+```
+git clone https://github.com/xdanielc/clock-web-app
 cd clock-web-app
 npm install
-npm run dev``
+npm run dev
+```
 
 To run the lines above is necessary to have [git](https://git-scm.com/) and [node](https://nodejs.org/en/) installed
